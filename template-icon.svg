@@ -1,0 +1,14 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Whoogle Search - Privacy-focused search icon -->
+  <rect width="800" height="800" fill="#6C3FC5"/>
+  <g transform="translate(400,400)">
+    <!-- Magnifying glass circle -->
+    <circle cx="0" cy="0" r="200" fill="none" stroke="#ffffff" stroke-width="30"/>
+    <!-- Magnifying glass handle -->
+    <line x1="140" y1="140" x2="250" y2="250" stroke="#ffffff" stroke-width="30" stroke-linecap="round"/>
+    <!-- Privacy eye-slash icon integrated -->
+    <path d="M -80 -40 Q 0 -100 80 -40" fill="none" stroke="#ffffff" stroke-width="20" stroke-linecap="round"/>
+    <line x1="0" y1="-20" x2="0" y2="40" stroke="#ffffff" stroke-width="20" stroke-linecap="round"/>
+    <line x1="0" y1="40" x2="0" y2="70" stroke="#ffffff" stroke-width="15" stroke-linecap="round"/>
+  </g>
+</svg>
