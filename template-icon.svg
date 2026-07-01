@@ -1,14 +1,14 @@
-<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
-  <!-- Whoogle Search - Privacy-focused search icon -->
-  <rect width="800" height="800" fill="#6C3FC5"/>
-  <g transform="translate(400,400)">
-    <!-- Magnifying glass circle -->
-    <circle cx="0" cy="0" r="200" fill="none" stroke="#ffffff" stroke-width="30"/>
-    <!-- Magnifying glass handle -->
-    <line x1="140" y1="140" x2="250" y2="250" stroke="#ffffff" stroke-width="30" stroke-linecap="round"/>
-    <!-- Privacy eye-slash icon integrated -->
-    <path d="M -80 -40 Q 0 -100 80 -40" fill="none" stroke="#ffffff" stroke-width="20" stroke-linecap="round"/>
-    <line x1="0" y1="-20" x2="0" y2="40" stroke="#ffffff" stroke-width="20" stroke-linecap="round"/>
-    <line x1="0" y1="40" x2="0" y2="70" stroke="#ffffff" stroke-width="15" stroke-linecap="round"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2D1B69"/><stop offset="100%" stop-color="#120933"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7C3AED"/><stop offset="100%" stop-color="#6C3FC5"/></linearGradient>
+  </defs>
+  <rect width="800" height="800" rx="120" fill="url(#bg)"/>
+  <circle cx="400" cy="400" r="190" stroke="#7C3AED" stroke-width="1.5" opacity="0.1"/>
+  <!-- Magnifying glass circle -->
+  <circle cx="370" cy="350" r="110" stroke="url(#glass)" stroke-width="10" fill="none"/>
+  <!-- Handle -->
+  <line x1="450" y1="430" x2="530" y2="510" stroke="url(#glass)" stroke-width="12" stroke-linecap="round"/>
+  <!-- Inner highlight -->
+  <circle cx="370" cy="350" r="95" stroke="#A78BFA" stroke-width="1" opacity="0.15" fill="none"/>
 </svg>
