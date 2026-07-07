@@ -1,14 +1,19 @@
-FROM docker.io/benbusby/whoogle-search:1.2.3
+FROM docker.io/benbusby/whogle-search:1.2.3
 
-LABEL org.opencontainers.image.source="https://github.com/INAPP-Mobile/railway-whoogle-search"
+LABEL org.opencontainers.image.source="https://github.com/INAPP-Mobile/railway-whogle-search"
 
-# Healthcheck - use shell form so $PORT expands at runtime
-HEALTHCHECK --interval=30s --timeout=5s \
-  CMD curl -f http://localhost:5000/healthz || exit 1
+# Whoogle listens on port 5000 internally.
+ENV PORT=5000
 
-# Expose port for documentation (Railway sets PORT env var)
+HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 \
+  CMD curl -fsS "http://127.0.0.1:${PORT:-5000}/healthz" >/dev/null 2>&1 || exit 1
+
 EXPOSE 5000
 
-# Whoogle runs on port 5000 internally
-# Railway will override with $PORT if set
+# Ensure Tor data directory exists with proper ownership for non-root user before switching
+RUN mkdir -p /var/lib/tor && chown nobody:nogroup /var/lib/tor
+
+# Run as non-root user for security (Railway constraint)
+USER nobody
+
 ENTRYPOINT ["/bin/sh", "-c", "misc/tor/start-tor.sh & ./run"]

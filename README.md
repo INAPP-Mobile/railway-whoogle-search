@@ -1,8 +1,8 @@
 # Deploy and Host
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/whoogle-search)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/new/template/whoogle-search)
 
-![OG Image](og-image.svg)
+![OG Image](https://raw.githubusercontent.com/INAPP-Mobile/railway-whoogle-search/main/og-image.svg)
 
 Whoogle Search is a self-hosted, ad-free, privacy-respecting metasearch engine that provides Google search results without ads, JavaScript, cookies, or IP address tracking. It runs as a single container service on Railway with no database dependencies required.
 
