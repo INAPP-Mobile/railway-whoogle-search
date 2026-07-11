@@ -10,10 +10,7 @@ HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 \
 
 EXPOSE 5000
 
-# Ensure Tor data directory exists with proper ownership for non-root user before switching
-RUN mkdir -p /var/lib/tor && chown nobody:nogroup /var/lib/tor
 
-# Run as non-root user for security (Railway constraint)
 USER nobody
 
 ENTRYPOINT ["/bin/sh", "-c", "misc/tor/start-tor.sh & ./run"]
