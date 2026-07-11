@@ -10,7 +10,4 @@ HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 \
 
 EXPOSE 5000
 
-
-USER nobody
-
 ENTRYPOINT ["/bin/sh", "-c", "misc/tor/start-tor.sh & ./run"]
