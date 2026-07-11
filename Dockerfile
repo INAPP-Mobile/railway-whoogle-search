@@ -1,4 +1,4 @@
-FROM docker.io/benbusby/whogle-search:1.2.3
+FROM docker.io/benbusby/whoogle-search:1.2.4
 
 LABEL org.opencontainers.image.source="https://github.com/INAPP-Mobile/railway-whogle-search"
 
