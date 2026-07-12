@@ -1,7 +1,7 @@
 {
   "WHOOGLE_USER": {
-    "defaultValue": "",
-    "description": "Basic auth username. Leave blank to disable authentication.",
+    "defaultValue": "admin",
+    "description": "Basic auth username. Authentication is enabled by default; leave empty to disable.",
     "isOptional": true
   },
   "WHOOGLE_PASS": {
@@ -15,8 +15,8 @@
     "isOptional": true
   },
   "WHOOGLE_CONFIG_LANGUAGE": {
-    "defaultValue": "",
-    "description": "Interface language (e.g., en, ja, es). Leave empty for default.",
+    "defaultValue": "en",
+    "description": "Interface language (e.g., en, ja, es). English is the default.",
     "isOptional": true
   },
   "WHOOGLE_CONFIG_SAFE": {
@@ -27,16 +27,6 @@
   "WHOOGLE_CONFIG_TOR": {
     "defaultValue": "0",
     "description": "Route searches through Tor: 1 for enabled, 0 for disabled.",
-    "isOptional": true
-  },
-  "WHOOGLE_PROXY_TYPE": {
-    "defaultValue": "",
-    "description": "Proxy type: socks5, socks4, or http.",
-    "isOptional": true
-  },
-  "WHOOGLE_PROXY_LOC": {
-    "defaultValue": "",
-    "description": "Proxy location in host:port format.",
     "isOptional": true
   }
 }
